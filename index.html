@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<title>AR WebGL || Lokcay 3D</title>
+	<script src='js/three.js'></script>
+	<script src="js/FBXLoader.js"></script>
+	<script src="js/inflate.min.js"></script>
+
+	<!-- include jsartookit -->
+	<script src="jsartoolkit5/artoolkit.min.js"></script>
+	<script src="jsartoolkit5/artoolkit.api.js"></script>
+	<!-- include threex.artoolkit -->
+	<script src="threex/threex-artoolkitsource.js"></script>
+	<script src="threex/threex-artoolkitcontext.js"></script>
+	<script src="threex/threex-arbasecontrols.js"></script>
+	<script src="threex/threex-armarkercontrols.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+<body>	
+
+<div class="lds-dual-ring"  id="js-drag-notice"></div>
+
+<div style='position: fixed; bottom: 10px; right:10px; width:100%; text-align: right; z-index: 1;'>
+	<a href="patt/pattern-logo_bulat.png" download><svg clas="patt" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 2c1.654 0 3 1.346 3 3v14c0 1.654-1.346 3-3 3h-14c-1.654 0-3-1.346-3-3v-14c0-1.654 1.346-3 3-3h14zm0-2h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-8 8h-1v-2h1v1h2v1h-1v1h-1v-1zm2 12v-1h-1v1h1zm-1-15v-1h-2v1h1v1h1v-1zm8-1v6h-1v-1h-4v-5h5zm-1 4v-3h-3v3h3zm-14 2h-1v1h2v-1h-1zm0 3h1v1h1v-3h-1v1h-2v2h1v-1zm5 1v2h1v-2h-1zm4-10h-1v3h1v-3zm0 5v-1h-1v1h1zm3-2h1v-1h-1v1zm-10-1h-1v1h1v-1zm2-2v5h-5v-5h5zm-1 1h-3v3h3v-3zm9 5v1h-1v-1h-2v1h-1v-1h-3v-1h-1v1h-1v1h1v2h1v-1h1v2h1v-2h3v1h-2v1h2v1h1v-3h1v1h1v2h1v-1h1v-1h-1v-1h-1v-1h1v-1h-2zm-11 8h1v-1h-1v1zm-2-3h5v5h-5v-5zm1 4h3v-3h-3v3zm12-3v-1h-1v1h1zm0 1h-1v1h-1v-1h-1v-1h1v-1h-2v-1h-1v2h-1v1h-1v3h1v-1h1v-1h2v2h1v-1h1v1h2v-1h1v-1h-2v-1zm-9-3h1v-1h-1v1zm10 2v1h1v1h1v-3h-1v1h-1zm2 4v-1h-1v1h1zm0-8v-1h-1v1h1z"/></svg></a>
+	
+</div>
+
+
+<div class="wadah">	
+	<div id="show" class="hamburger hamburger--arrow">
+		<div class="hamburger-box">
+		  <div  class="hamburger-inner"></div>
+		</div>
+	  </div>    
+</div>
+<div id="nav" class="navigation">
+	<div class="navigation__inner">
+		<iframe src="http://lokcay.com/contact/" width="auto" height="100%" scrolling="no" frameBorder="0"></iframe>
+		<!-- Navigation Content Here -->
+		<div class="center">
+			<div id="social-test">
+				<ul class="social">
+					<li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+					<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+					<li><i class="fa fa-youtube" aria-hidden="true"></i>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+  <script>
+ 		var btn = document.getElementById('show');
+	var nav = document.getElementById('nav');
+		    btn.addEventListener('click', function() {
+    nav.classList.toggle('active');
+}); 
+
+    var hamburgers = document.getElementById("show");
+    if (hamburgers.length > 0) {
+      forEach(hamburgers, function(hamburger) {
+        hamburger.addEventListener("click", function() {
+          this.classList.toggle("is-active");
+        }, false);
+      });
+	}
+	
+  </script>
+
+
+
+
+
+
+
+	<script src="index.js">
+	
+	</script>
+
+
+</body>
+</html>
